@@ -1,0 +1,191 @@
+// @import '../bootstrap/less/bootstrap.less';
+
+/////////////////////
+// BooStrap Import //
+/////////////////////
+
+// Core variables and mixins
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Reset and dependencies
+@import "../bower_components/bootstrap/less/normalize.less";
+@import "../bower_components/bootstrap/less/print.less";
+// @import "../bower_components/bootstrap/less/glyphicons.less";
+
+// Core CSS
+@import "../bower_components/bootstrap/less/scaffolding.less";
+@import "../bower_components/bootstrap/less/type.less";
+@import "../bower_components/bootstrap/less/code.less";
+@import "../bower_components/bootstrap/less/grid.less";
+@import "../bower_components/bootstrap/less/tables.less";
+@import "../bower_components/bootstrap/less/forms.less";
+@import "../bower_components/bootstrap/less/buttons.less";
+
+// Components
+@import "../bower_components/bootstrap/less/component-animations.less";
+@import "../bower_components/bootstrap/less/dropdowns.less";
+@import "../bower_components/bootstrap/less/button-groups.less";
+@import "../bower_components/bootstrap/less/input-groups.less";
+@import "../bower_components/bootstrap/less/navs.less";
+@import "../bower_components/bootstrap/less/navbar.less";
+@import "../bower_components/bootstrap/less/breadcrumbs.less";
+@import "../bower_components/bootstrap/less/pagination.less";
+@import "../bower_components/bootstrap/less/pager.less";
+@import "../bower_components/bootstrap/less/labels.less";
+@import "../bower_components/bootstrap/less/badges.less";
+@import "../bower_components/bootstrap/less/jumbotron.less";
+@import "../bower_components/bootstrap/less/thumbnails.less";
+@import "../bower_components/bootstrap/less/alerts.less";
+@import "../bower_components/bootstrap/less/progress-bars.less";
+@import "../bower_components/bootstrap/less/media.less";
+@import "../bower_components/bootstrap/less/list-group.less";
+@import "../bower_components/bootstrap/less/panels.less";
+@import "../bower_components/bootstrap/less/responsive-embed.less";
+@import "../bower_components/bootstrap/less/wells.less";
+@import "../bower_components/bootstrap/less/close.less";
+
+// Components w/ JavaScript
+@import "../bower_components/bootstrap/less/modals.less";
+@import "../bower_components/bootstrap/less/tooltip.less";
+@import "../bower_components/bootstrap/less/popovers.less";
+@import "../bower_components/bootstrap/less/carousel.less";
+
+// Utility classes
+@import "../bower_components/bootstrap/less/utilities.less";
+@import "../bower_components/bootstrap/less/responsive-utilities.less";
+
+// Yeti theme
+@import '../bower_components/bootswatch/yeti/variables.less';
+@import '../bower_components/bootswatch/yeti/bootswatch.less';
+
+//////////////////
+// font-awesome //
+//////////////////
+
+@import '../bower_components/font-awesome/less/font-awesome.less';
+@fa-css-prefix: icon-fa;
+
+///////////////////////
+// Include Ratio CSS //
+///////////////////////
+
+@import '../bower_components/ratio-css-repo/less/values.less';
+@import '../bower_components/ratio-css-repo/less/mixin.less';
+
+.ratio(1302, 2032, book);
+.ratio(16, 9, video);
+
+// Option Theme
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((840px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((840px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+.img-responsive {
+	width: 100%;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+	input[type=file] {
+	    display: none;
+	}
+}
+
+.media-back-title:extend(.h6,h6) {
+	small:extend(h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .small, h5 .small, .h5 .small, h6 .small, .h6 .small) {
+
+	}
+}
+
+.panel-coments:extend(.panel-footer) {
+	.media {
+		.media-body {
+			p {
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+.text-suspencive {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+.text-header {
+	margin-top: 0px;
+}
+
+// Solucion iconos no visibles
+.fa {
+	display: inline-block !important;
+}
+
+// Solucion modal header
+.modal-header {
+	background-color: #fff;
+	&, .close {
+		color: #333;
+	}
+}
+
+.icon-fa-kaunto, .icon-fa-kaunto-o {
+	width: 12px;
+	height: 12px;
+	background-image: url(../img/logo16.png);
+	background-repeat: no-repeat;
+	background-size: auto 12px;
+	background-position: center center;
+}
+
+.blockad {
+	@start-font-size: .9em;
+	&,a,span,p {
+		font-size: @start-font-size;
+	}
+	h1, h2, h3, h4, h5, h6, p {
+		margin: 0px;
+		padding: 0px;
+	}
+	h1 {
+		font-size: @start-font-size + .3;
+	}
+	h2 {
+		font-size: @start-font-size + .2;
+	}
+	h3 {
+		font-size: @start-font-size + .1;
+	}
+	h4 {
+		font-size: @start-font-size;
+	}
+	h5 {
+		font-size: @start-font-size - .1;
+	}
+	h6 {
+		font-size: @start-font-size - .2;
+	}
+	.banner {
+		margin-bottom: 10px;
+	}
+}
