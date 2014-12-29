@@ -1,10 +1,9 @@
 {
-  "name": "Kuanto blog",
-  "version": "0.1.0",
+  "name": "latte",
   "authors": [
     "Jonathan Delgado Zamorano <jonad.correo@gmail.com>"
   ],
-  "license": "Owner",
+  "license": "MIT",
   "private": true,
   "ignore": [
     "**/.*",

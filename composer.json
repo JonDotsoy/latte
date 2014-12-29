@@ -1,8 +1,8 @@
 {
-	"name": "kaunto/kaunto",
+	"name": "alfa30/latte",
 	"description": "kuanto.info es un sitio fundado por Efren Esparza en julio del año 2014.",
-	"version": "1.0.0-dev",
-	"license": "@Copyright 2014 Teknocom S de RL de CV All rights Reserved.",
+	"version": "1.0.0-beta",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Efren Esparza",
