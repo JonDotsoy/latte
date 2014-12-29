@@ -19,7 +19,7 @@ $ composer install
 Montar Base de datos
 --------------------
 
-Para montar la base de datos se utiliza el comando con artisan.
+Para montar la base de datos se utiliza el comando con [artisan](http://laravel.com/docs/4.2/artisan).
 
 ```sh
 $ artisan migrate --force
